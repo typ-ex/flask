@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.hostname = "docker-flask.test"
   config.vm.provider :virtualbox do |v|
-    v.name = docker-flask.test
+    v.name = "docker-flask.test"
     v.memory = 1024
     v.cpus = 2
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
