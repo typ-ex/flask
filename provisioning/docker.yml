@@ -25,7 +25,7 @@
     image: flask:latest
     name: www
     state: started
-    command: python /opt/www/index.py
+    command: python3 /opt/www/index.py
     ports: "80:80"
 
 - name: Run a MySQL container.
